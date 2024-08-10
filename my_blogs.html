@@ -6,16 +6,19 @@
 <title>Gray and White Web Page</title>
 <style>
     body {
-        background-color: #f0f0f0; /* Light Gray */
+        margin: 0;
         font-family: Arial, sans-serif;
     }
-    .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #fff; /* White */
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    .header {
+        height: 25vh;
+        background-color: #b0b0b0; /* Gray */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .content {
+        height: 75vh;
+        background-color: #f5f5f5; /* Light White */
     }
     button {
         padding: 10px 20px;
@@ -29,11 +32,16 @@
 </style>
 </head>
 <body>
-<div class="container">
-    <button onclick="alert('Button 1 Clicked')">Button 1</button>
-    <button onclick="alert('Button 2 Clicked')">Button 2</button>
-    <button onclick="alert('Button 3 Clicked')">Button 3</button>
-    <button onclick="alert('Button 4 Clicked')">Button 4</button>
+
+<div class="header">
+    <button onclick="alert('Fluorescence images Clicked')">Fluorescence images</button>
+    <button onclick="alert('Articles Clicked')">Articles</button>
+    <button onclick="alert('Fun Clicked')">Fun</button>
+    <button onclick="alert('Miscellaneous Clicked')">Miscellaneous</button>
+</div>
+
+<div class="content">
+    <!-- Other content can go here if needed -->
 </div>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -44,9 +52,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
-
-
-
-
+    
 </body>
 </html>
+

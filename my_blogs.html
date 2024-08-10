@@ -1,56 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Icon Buttons Page</title>
-    <style>
-        body {
-            background-color: #f0f0f0;
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Icon bar styling */
-        .icon-bar {
-            background-color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px 0;
-        }
-
-        .icon-bar a {
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-            font-size: 17px;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .icon-bar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        /* Ensuring icons are not visible */
-        .icon-bar i {
-            display: none;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gray and White Web Page</title>
+<style>
+    body {
+        background-color: #f0f0f0; /* Light Gray */
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff; /* White */
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    button {
+        padding: 10px 20px;
+        margin: 5px;
+        border: none;
+        border-radius: 3px;
+        background-color: #007bff; /* Blue */
+        color: #fff;
+        cursor: pointer;
+    }
+</style>
 </head>
 <body>
-
-    <!-- Icon bar -->
-    <div class="icon-bar">
-        <a href="#" aria-label="Home"></a>
-        <a href="#" aria-label="Search"></a>
-        <a href="#" aria-label="Email"></a>
-        <a href="#" aria-label="Globe"></a>
-    </div>
-
+<div class="container">
+    <button onclick="alert('Button 1 Clicked')">Button 1</button>
+    <button onclick="alert('Button 2 Clicked')">Button 2</button>
+    <button onclick="alert('Button 3 Clicked')">Button 3</button>
+    <button onclick="alert('Button 4 Clicked')">Button 4</button>
+</div>
 </body>
 </html>
-

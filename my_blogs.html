@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,66 +13,76 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+        rel="stylesheet">
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
-    
-    <!-- Linking the Google Font Poppins -->
+
+    <!-- Linking the google font poppins start here -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Linking the google font poppins end here -->
 
     <style>
-        body {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-        }
-        .navbar {
-            margin-bottom: 0;
-        }
-        .header {
-            height: 25vh;
-            background-color: #b0b0b0; /* Gray */
+        /* Center the button group horizontally */
+        .btn-group {
             display: flex;
-            align-items: center;
-            justify-content: center;
             flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px; /* Space between buttons */
         }
-        .content {
-            background-color: #f5f5f5; /* Light White */
-            padding: 20px;
-            text-align: center;
-        }
-        button {
+
+        /* Style the buttons */
+        .btn-primary {
             padding: 10px 20px;
-            margin: 5px;
-            border: none;
-            border-radius: 3px;
-            background-color: #007bff; /* Blue */
-            color: #fff;
-            cursor: pointer;
             font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff; /* Bootstrap primary color */
+            border: 1px solid transparent;
+            transition: background-color 0.3s, border-color 0.3s;
         }
-        /* Responsive design */
-        @media (max-width: 600px) {
-            .header {
-                flex-direction: column;
-            }
-            button {
-                width: 80%;
+
+        .btn-primary:hover {
+            background-color: #0056b3; /* Darker shade for hover */
+            border-color: #004085;
+        }
+
+        /* Responsive button sizes */
+        @media (max-width: 768px) {
+            .btn-primary {
                 font-size: 14px;
+                padding: 8px 16px;
             }
+        }
+
+        @media (max-width: 576px) {
+            .btn-primary {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
+        }
+
+        /* Add some margin-top for spacing from the content above */
+        .mt-4 {
+            margin-top: 1.5rem;
         }
     </style>
+
 </head>
+
 <body id="page-top">
 
-    <!-- Navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
             <span class="d-none d-lg-block">
@@ -106,15 +117,16 @@
         </div>
     </nav>
 
-    <div class="header">
-        <button onclick="alert('Fluorescence images Clicked')">Fluorescence images</button>
-        <button onclick="alert('Articles Clicked')">Articles</button>
-        <button onclick="alert('Fun Clicked')">Fun</button>
-        <button onclick="alert('Miscellaneous Clicked')">Miscellaneous</button>
-    </div>
-
-    <div class="content">
-        <!-- Additional content can go here -->
+    <div class="container-fluid p-0">
+        <!-- Centered buttons -->
+        <div class="container text-center mt-4">
+            <div class="btn-group">
+                <a class="btn btn-primary" href="#fluorescence">Fluorescence</a>
+                <a class="btn btn-primary" href="#fun">Fun</a>
+                <a class="btn btn-primary" href="#articles">Articles</a>
+                <a class="btn btn-primary" href="#miscellaneous">Miscellaneous</a>
+            </div>
+        </div>
     </div>
 
     <!-- Bootstrap core JavaScript -->
@@ -128,4 +140,5 @@
     <script src="js/resume.min.js"></script>
 
 </body>
+
 </html>

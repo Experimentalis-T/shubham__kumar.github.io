@@ -15,6 +15,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
     }
     .content {
         height: 75vh;
@@ -28,6 +29,17 @@
         background-color: #007bff; /* Blue */
         color: #fff;
         cursor: pointer;
+        font-size: 16px;
+    }
+    /* Responsive design */
+    @media (max-width: 600px) {
+        .header {
+            flex-direction: column;
+        }
+        button {
+            width: 80%;
+            font-size: 14px;
+        }
     }
 </style>
 </head>
@@ -52,7 +64,6 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
-    
 </body>
 </html>
 

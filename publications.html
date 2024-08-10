@@ -32,43 +32,50 @@
         body {
             font-family: 'Open Sans', sans-serif;
         }
-        
+
         .navbar-brand img {
-            max-width: 100%; /* Ensure the image scales correctly */
+            max-width: 100px; /* Limit image size for better scaling */
+            height: auto; /* Maintain aspect ratio */
         }
-        
+
         .resume-section {
-            padding: 1.5rem 1rem; /* Reduced padding for smaller devices */
+            padding: 2rem 1rem;
         }
-        
+
         .subheading {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
         }
 
         .img-profile {
             width: 100px;
             height: 100px;
         }
-        
+
         .nav-link {
-            font-size: 0.9rem; /* Smaller font for nav links */
+            font-size: 1rem;
         }
-        
-        @media (max-width: 600px) {
-            .resume-section {
-                padding: 1rem; /* Further reduce padding on very small screens */
-            }
-            
-            h1 {
-                font-size: 1.5rem; /* Adjusted heading font size for smaller screens */
+
+        /* Adjustments for smaller screens */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                padding: 0.5rem;
             }
 
-            .subheading {
-                font-size: 1rem; /* Slightly smaller subheading on mobile */
+            .navbar-brand {
+                margin-bottom: 0.5rem;
+            }
+
+            .resume-section {
+                padding: 1rem;
             }
 
             .nav-link {
-                font-size: 0.8rem; /* Smaller font for nav links on mobile */
+                font-size: 0.9rem;
+            }
+
+            .subheading {
+                font-size: 1rem;
             }
         }
     </style>
@@ -78,7 +85,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/Webpageimg.jpg" alt="">
+            <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/Webpageimg.jpg" alt="Profile Image">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

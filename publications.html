@@ -33,26 +33,37 @@
         rel="stylesheet">
 
     <style>
-        .img-fluid {
-            max-width: 100%;
-            height: auto;
-        }
-
-        /* Ensure aspect ratio is maintained */
+        /* Ensure image is responsive */
         .img-profile {
             width: 150px;
             height: 150px;
             object-fit: cover; /* Ensure image is covered and maintains aspect ratio */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        /* Optional: Additional styling for responsive containers */
+        /* Make sure images resize properly on smaller screens */
         @media (max-width: 768px) {
+            .img-profile {
+                width: 100px;
+                height: 100px;
+            }
+
             .resume-item h3 {
                 font-size: 1.25rem;
             }
 
             .resume-item p {
                 font-size: 0.9rem;
+            }
+        }
+
+        /* Custom CSS for body padding on smaller devices */
+        @media (max-width: 576px) {
+            .container-fluid {
+                padding-left: 0;
+                padding-right: 0;
             }
         }
     </style>
@@ -64,7 +75,7 @@
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
             <!-- Ensure image is responsive and maintains aspect ratio -->
             <span class="d-none d-lg-block">
-                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/Webpageimg.jpg" alt="">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/Webpageimg.jpg" alt="Profile">
             </span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"

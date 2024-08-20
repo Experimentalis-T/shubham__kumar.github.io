@@ -3,23 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autofluorescence Story</title>
     <style>
         body {
             font-family: "Calibri", sans-serif;
+            background-image: url('bolgsimages/images/pexels-felixmittermeier-956999.jpg'); /* Path to your background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
             padding: 20px;
-            line-height: 1.6;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
         }
 
         p {
-            margin-bottom: 1em;
+            margin-bottom: 1.5em;
             text-align: justify;
             font-size: 16px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
         }
 
         img {
             max-width: 100%;
             height: auto;
+            border-radius: 8px;
         }
 
         table {
@@ -32,51 +54,95 @@
             border: 1px solid #ccc;
             padding: 10px;
             text-align: center;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-section p {
+            margin-top: 10px;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
         }
 
         @media (min-width: 768px) {
+            p {
+                font-size: 18px;
+            }
+
             td {
                 width: 50%;
             }
+        }
 
+        @media (max-width: 768px) {
+            td {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
             p {
-                font-size: 18px;
+                font-size: 14px;
             }
         }
     </style>
 </head>
 
 <body>
+    <button class="back-button" onclick="goBack()">Back</button>
+    <div class="container">
+        <h1>Autofluorescence: A Scientific Surprise</h1>
+        <p>It's truly fascinating how the beauty of regular experimentation reveals itself. When you consistently conduct your experiments, you might encounter what seems like irrelevant noise or irregularities. By carefully examining these anomalies, you can uncover entirely new phenomena, aspects that were never the focus of your original study. This serendipitous discovery of insights from what initially appeared to be mere noise highlights the unpredictable and wondrous nature of scientific exploration.</p>
 
-    <p>It's truly fascinating how the beauty of regular experimentation reveals itself. When you consistently conduct your experiments, you might encounter what seems like irrelevant noise or irregularities. By carefully examining these anomalies, you can uncover entirely new phenomena, aspects that were never the focus of your original study. This serendipitous discovery of insights from what initially appeared to be mere noise highlights the unpredictable and wondrous nature of scientific exploration.</p>
+        <p>One time, while I was working with fluorescence microscopy, I had a moment that was equal parts scientific revelation and cleaning disaster. There I was, examining my fluorescence samples on a glass slide, when I spotted some dust and tiny bits of tissue paper—definitely not what I wanted to see. Turns out, those were remnants of the tissue I usually use to clean the glass. But here's the twist: those pesky little debris were fluorescing in the blue region! I was completely shocked. Who knew my cleaning routine had a secret glow-in-the-dark feature? I mean, why on earth is the tissue paper fluorescing without any fluorophore tagged to it?</p>
 
-    <p>One time, while I was working with fluorescence microscopy, I had a moment that was equal parts scientific revelation and cleaning disaster. There I was, examining my fluorescence samples on a glass slide, when I spotted some dust and tiny bits of tissue paper—definitely not what I wanted to see. Turns out, those were remnants of the tissue I usually use to clean the glass. But here's the twist: those pesky little debris were fluorescing in the blue region! I was completely shocked. Who knew my cleaning routine had a secret glow-in-the-dark feature? I mean, why on earth is the tissue paper fluorescing without any fluorophore tagged to it?</p>
+        <p>Yaa! you guessed it right it’s called <strong><u>autofluorescence</u></strong>! story end.</p>
 
-    <p>Yaa! you guessed it right it’s called <strong><u>autofluorescence</u></strong>! story end.</p>
+        <p>Autofluorescence means that under a certain wavelength of excitation light, electrons in a substance can enter an excited state and then transition back to the ground state to produce a certain wavelength of light.</p>
 
-    <p>Autofluorescence means that under a certain wavelength of excitation light, electrons in a substance can enter an excited state and then transition back to the ground state to produce a certain wavelength of light.</p>
+        <table>
+            <tr>
+                <td>
+                    <img src="images/kimtechandtisue/34.png" alt="Fluorescence Image 1">
+                    <p>(a) Blue</p>
+                </td>
+                <td>
+                    <img src="images/kimtechandtisue/first_setimages.png" alt="Fluorescence Image 2">
+                    <p>(b) Green</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="images/kimtechandtisue/kimtech.png" alt="Fluorescence Image 3">
+                    <p>(c) Yellow</p>
+                </td>
+            </tr>
+        </table>
+    </div>
 
-    <table>
-        <tr>
-            <td>
-                <img src="images/kimtechandtisue/34.png" alt="Fluorescence Image 1">
-                <p>(a) Blue</p>
-            </td>
-            <td>
-                <img src="images/kimtechandtisue/first_setimages.png" alt="Fluorescence Image 2">
-                <p>(b) Green</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <img src="images/kimtechandtisue/kimtech.png" alt="Fluorescence Image 3">
-                <p>(c) Yellow</p>
-            </td>
-            
-        </tr>
-    </table>
-
-
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </body>
 </html>
-
